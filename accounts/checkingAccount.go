@@ -1,7 +1,9 @@
 package accounts
 
+import "bank/customers"
+
 type CheckingAccount struct {
-	Owner         string
+	Owner         customers.Customer
 	Agency        int
 	AccountNumber int
 	Balance       float64
